@@ -15,7 +15,8 @@
               "wdth" 100;;}
         .fa-check {color: var(--color-blue);}
         .padding-bottom{padding-bottom: 20px;}
- /*ROOT*/
+        .flex-wrap{flex-wrap: wrap;} 
+        /*ROOT*/
          :root {
             --color-light-blue: #b4d0e7;
             --color-dark: #000000;
@@ -35,11 +36,16 @@
  /*HEADER*/         
           #header{width: 100%;
          min-width: 300px;
-         flex-wrap:wrap ;
-         padding: 20px 20px;}
+         padding: 20px 20px;
+         position: fixed;
+         background-color: white;
+         width: 100%;
+        z-index: 100;}
          
          #nav{display: flex;
-               justify-content: space-between;}
+               justify-content: space-between;
+            
+            }
         .liste-nav{display: flex;
                    gap: 20px;
                   padding-left: 30px;}
@@ -57,8 +63,7 @@
     .jumbo-container{ 
         background-color: var(--color-logo-third);
         max-width: 100%;
-     min-width:300px;
-     flex-wrap: wrap;}
+     min-width:300px;}
 
         .top-jumbotron > h1{font-size: 4em;}
         .bottom-jumbotron{display: flex;
@@ -141,17 +146,49 @@
                             text-align: center;
                             padding: 5px 5px;
                            border:1px solid  var(--color-dark)}
-
-
-     /*SECTION-dropbox-buisness*/
+                           
+      /*SECTION-dropbox-buisness*/
      .dropbox-buisness{width: 1000px;
         margin: 100px auto;}      
       .operazioni-img { width: 100%; } 
-      .operazioni{width: calc(100%/3);
+      .operazioni{width: calc(90%/3);
         display: flex;
                  flex-direction: column;
                  justify-content: space-between; 
                  margin-right: 20px;
-                 margin-top: 20px;} 
+                 margin-top: 20px;
+                 margin-left: 10px;} 
                  
+
      .gruppo-opirazioni{display: flex;}
+
+
+       /*SECTION-Client*/
+     .client{width: 1000px;
+        margin: 100px auto;}
+        .client-anchor{text-decoration: underline;
+                     color: var(--color-blue);}
+
+
+     /*SECTION-client-Brand*/
+
+     .client-brand{max-width: 100%;
+                   display: flex;} 
+                   
+    .brand-group {width: calc(100%/3);
+            height: 100vh/3;
+        display: flex;}
+    .center-brand{width: calc(100%/3);
+                 display: flex;}
+     .brand{width: 50%;
+            height: 50%;}
+    
+            /*call to action*/
+.call-to-action{background-color: var(--color-blue);}
+
+          /*SECTION-FAQ*/
+
+          /*SECTION-FOOTER*/
+  .footer{ background-color: rgb(35, 39, 42);
+    width: 100%;}
+  

@@ -14,6 +14,7 @@
             font-variation-settings:
               "wdth" 100;;}
         .fa-check {color: var(--color-blue);}
+        .padding-bottom{padding-bottom: 20px;}
  /*ROOT*/
          :root {
             --color-light-blue: #b4d0e7;
@@ -53,8 +54,11 @@
        
        
     /*SECTION-jumbotron*/ 
-    .jumbo-container{ width: 100%;
-        background-color: var(--color-logo-third);}
+    .jumbo-container{ 
+        background-color: var(--color-logo-third);
+        max-width: 100%;
+     min-width:300px;
+     flex-wrap: wrap;}
 
         .top-jumbotron > h1{font-size: 4em;}
         .bottom-jumbotron{display: flex;
@@ -90,7 +94,7 @@
         .checkbox:checked{ 
             background-color: var(--color-blue);
         }   
-     .piano-buisness{width: 1000px;
+     #piano-buisness{width: 1000px;
           margin: 100px auto;}
      
     .piano-pagamento{display: flex;
@@ -109,6 +113,45 @@
       .spazio-in-piano{margin-bottom: 15px;}
       .contattaci{margin-bottom: 70px;}
 
+       /*SECTION-TEAM*/ 
                    
-             
-     
+       .team{width: 1000px;
+        margin: 100px auto;
+        border: 1px solid var(--color-dark);}
+        .team-top{border-bottom: 1px solid var(--color-dark);
+          text-align: center;}
+       .left-buttom-team{display: flex;
+                  justify-content: space-between;
+                  padding: 30px;}
+       .left-padding{padding-left: 30px;}
+
+       /*SECTION-Partner-dropbox*/ 
+       .partner-dropbox{width: 1000px;
+        margin: 100px auto;
+      display: flex;}
+        .partner-img{width: 100%;}
+      .parag-partner{display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                      align-content: space-between;
+                     padding-left: 30px;
+                     padding-bottom: 30px;} 
+       .button2{background-color:#ffffff ;
+                            color: #000000;
+                            text-align: center;
+                            padding: 5px 5px;
+                           border:1px solid  var(--color-dark)}
+
+
+     /*SECTION-dropbox-buisness*/
+     .dropbox-buisness{width: 1000px;
+        margin: 100px auto;}      
+      .operazioni-img { width: 100%; } 
+      .operazioni{width: calc(100%/3);
+        display: flex;
+                 flex-direction: column;
+                 justify-content: space-between; 
+                 margin-right: 20px;
+                 margin-top: 20px;} 
+                 
+     .gruppo-opirazioni{display: flex;}

@@ -14,12 +14,15 @@
             font-variation-settings:
               "wdth" 100;;}
         .fa-check {color: var(--color-blue);}
+        
  /*Padding*/
         .padding-bottom{padding-bottom: 20px;}
+        .p-bottom10px{padding-bottom:10px;}
         .left-padding{padding-left: 30px;} 
          .padding-top{padding-top: 20px;}
         /*FLEX-WRAP*/
         .flex-wrap{flex-wrap: wrap;} 
+        .area{margin-bottom: 100px;}
  /*ROOT*/
          :root {
             --color-light-blue: #b4d0e7;
@@ -224,8 +227,7 @@
   .faq{max-width: 1000px;
       margin: 0 auto;
   display: flex;
- flex-direction: column;
-}
+ flex-direction: column;}
 
   .faq-list{display: flex;} 
 .dropdown-list{
@@ -240,5 +242,18 @@
 
           /*SECTION-FOOTER*/
   .footer{ background-color: rgb(35, 39, 42);
-    width: 100%;}
-  
+    width: 100%;
+   }
+    .footer-container{max-width: 1000px;
+      margin: 0 auto;
+     display: flex;
+    justify-content: space-between;}
+    .list-footer{color: white;}
+    .small-font-size-list{font-size: 0.8em ;}
+      /*FOOTER-BOTTOM*/
+    .footer-bottom{max-width: 1000px;
+      margin: 20px auto;}
+    .short-hr-list{width: 80px;
+    color: white;
+  margin-bottom: 10px;}
+    .language{color: white;}
